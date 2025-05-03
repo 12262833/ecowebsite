@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco-Friendly Product Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to the Eco-Friendly Product Store</h1>
+    <p>Your one-stop shop for sustainable living.</p>
+  </header>
+
+  <!-- Product Showcase Section -->
+  <section class="product-section">
+    <h2>Our Eco-Friendly Products</h2>
+    <div class="product-grid">
+    
+      <div class="product-card animate-on-scroll">
+        <img src="https://img.kentfaith.com/cache/catalog/products/us/GW31.0048/GW31.0048-1-518x518.jpg" alt="Electric Car Charger" class="product-img" />
+        <h3>Electric Car Charger</h3>
+        <p>Reduce your carbon emissions by switching to electric power.</p>
+      </div>
+  
+      <div class="product-card animate-on-scroll">
+        <img src="https://i.pinimg.com/736x/2f/88/80/2f8880257c8760220fcfda05da3c556c.jpg" alt="Reusable Bamboo Bottle" class="product-img" />
+        <h3>Reusable Bamboo Bottle</h3>
+        <p>Eco-friendly bottles to replace single-use plastic bottles.</p>
+      </div>
+  
+      <div class="product-card animate-on-scroll">
+        <img src="https://www.jiomart.com/images/product/original/rvmnmadese/homehop-40w-solar-light-outdoor-flood-led-waterproof-lamp-for-home-garden-wall-patio-product-images-orvmnmadese-p596017330-0-202402231251.jpg?im=Resize=(1000,1000)" alt="Solar Powered LED Lamps" class="product-img" />
+        <h3>Solar-Powered LED Lamps</h3>
+        <p>Illuminate your home using clean, renewable energy.</p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Carbon Footprint Calculator -->
+  <section class="calculator-section">
+    <h2>Carbon Footprint Calculator</h2>
+    <form id="carbon-footprint-form">
+      <label for="usage-time">Weekly Usage Time (hours):</label>
+      <input type="number" id="usage-time" name="usage-time" min="0" required />
+
+      <label for="product-type">Select Product Type:</label>
+      <select id="product-type" name="product-type" required>
+        <option value="">--Select--</option>
+        <option value="electric">Electric</option>
+        <option value="non-electric">Non-Electric</option>
+      </select>
+
+      <button type="submit">Calculate Footprint</button>
+      <p id="calculator-result"></p>
+    </form>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Eco-Friendly Product Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
